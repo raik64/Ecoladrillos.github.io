@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <title>Formulario proyecto</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f1ffc9; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .titulo {
+        font-size: 50px;
+        font-family:  Ravie , 'Arial Black', sans-serif;
+        text-align: center;
+        margin: 30px 0 10px 0;
+        color: #3e5a9a; 
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+      }
+
+      .contenedor-principal {
+        display: flex;
+        background-color: #dbffd2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        gap: 15px;
+        margin-bottom: 40px;
+      }
+
+      .contenedor {
+        background-color: rgba(186, 235, 143, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        width: 400px;
+      }
+
+      .contenido-derecha {
+        width: 320px;
+        background-color: #f0fff0;
+        border: 2px dashed #64a100;
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      h1, h2 {
+        color: #06402B;
+        margin-top: 0;
+      }
+
+      form p {
+        margin: 10px 0;
+      }
+
+      input[type="submit"] {
+        background-color: #06402B;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #056030;
+      }
+
+      ul {
+        padding-left: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="titulo">Formulario de Ecoladrillos</div>
+
+    <div class="contenedor-principal">
+      <div class="contenedor">
+        <div style="border: solid #06402B; padding: 10px; text-align: center;">
+          <h1>Producción de Ecoladrillos</h1>
+          <form method="post">
+            <p>Fecha de producción:<br>
+              <input type="date" name="FECHA">
+            </p>
+            <p>Cantidad de ladrillos:<br>
+              <input type="number" name="cantidad" placeholder="1, 2, 3..." required>
+            </p>
+            <p>Tipo de plástico:<br>
+              <input type="text" name="T. plastico" placeholder="HDPE, entre otras..." required>
+            </p>
+            <p>Peso del plástico:<br>
+              <input type="number" name="Peso" placeholder="# de plástico reciclado" required> kg
+            </p>
+            <p>Color del ladrillo:<br>
+              <input type="text" name="color" placeholder="El color final del ladrillo." required>
+            </p>
+            <p>Responsable:<br>
+              <input type="text" name="Nombre" placeholder="Kimberly Salazar" required>
+            </p>
+            <p>Costo aproximado:<br>
+              <input type="number" name="costo" placeholder="10" required> $
+            </p>
+            <p><input type="submit" value="Enviar"></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="contenido-derecha">
+        <h2> Impacto del Ecoladrillo </h2>
+        <ul>
+          <li>Un ecoladrillo reutiliza hasta 1 kg de plástico.</li>
+          <li>Ayudas a reducir la contaminación ambiental.</li>
+          <li>Se pueden usar en bancos, muros y construcciones.</li>
+        </ul>
+        <p><strong>¡Gracias por contribuir al planeta!</strong></p>
+
+<video width="100%" height="240" controls>
+  <source src="ecoladrillos.mp4" type="video/mp4">
+  Tu navegador no soporta el video.
+</video>
+
+
+    </div>
+  </body>
+</html>
